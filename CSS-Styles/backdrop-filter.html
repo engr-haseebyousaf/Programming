@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            height: 550px;
+            width: 500px;
+            border: 2px solid black;
+            background: url(Images/flower.png) no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .inner{
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            backdrop-filter: blur(5px) brightness(150%) contrast(20px) drop-shadow(50%) grayscale(30deg) hue-rotate(60 deg) invert(20%) opacity(20px) sepia(50%) saturate(30%);
+        }
+    </style>
+    <title>Backdrop filter</title>
+</head>
+<body>
+    <h1>Backdrop filter</h1>
+    <div class="container">
+        <div class="inner"></div>
+    </div>
+</body>
+</html>

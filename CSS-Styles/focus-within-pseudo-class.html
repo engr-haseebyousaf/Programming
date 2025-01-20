@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        form{
+            width: 600px;
+            border: 2px solid black;
+            margin: 20px auto;
+            
+        }
+        form:focus-within{
+            background-color: gold;
+        }
+        form > div {
+            padding: 0.5rem, 2rem;
+        }
+        form > div:focus-within{
+            background-color: deepskyblue;
+        }
+        :is(label[for="fullname"], label[for="email"], label[for="number"]){
+            display: inline-block;
+            width: 25%;
+        }
+        form > div > :is(input[type="text"], input[type="number"], input[type="email"], input[type="text"]){
+            padding: 3px;
+
+        }
+        form > div{
+            padding: 0.5rem;
+        }
+        :is(label[for="gender"], label[for="hobbies"]){
+            display: inline-block;
+            width: 25%;
+        }
+        
+        
+    </style>
+    <title>Focus within</title>
+</head>
+<body>
+    <h1>Focus within</h1>
+    <form action="">
+        <div>
+            <label for="fullname">Full Name</label> <input type="text" name="fullname" id="fullname">
+        </div>
+        <div>
+            <label for="email">Email</label> <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="gender">Gender</label> <input type="radio" name="gender" id="male"> <label for="male">Male</label>
+            <input type="radio" name="gender" id="female"> <label for="female">Female</label>
+        </div>
+        <div>
+            <label for="number">Number</label> <input type="number" name="number" id="number">
+        </div>
+        <div>
+            <label for="hobbies">Hobbies</label> <input type="checkbox" name="hobbies" id="cricket"> <label for="cricket">Cricket</label>
+            <input type="checkbox" name="hobbies" id="badminton"> <label for="badminton">Badminton</label>
+            <input type="checkbox" name="hobbies" id="football"> <label for="football">Football</label>
+            <input type="checkbox" name="hobbies" id="study"> <label for="study">Study</label>
+        </div>
+        <div>
+            <textarea name="" id="" cols="30" rows="5" placeholder="Leave a comment" style="resize: none;"></textarea>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>

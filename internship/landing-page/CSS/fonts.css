@@ -1,0 +1,12 @@
+@font-face {
+    font-family: text-light;
+    src: url("../resources/Poppins/Poppins-Light.ttf");
+}
+@font-face {
+    font-family: semi-bold;
+    src: url("../resources/Poppins/Poppins-Medium.ttf");
+}
+@font-face {
+    font-family: light-text;
+    src: url("../resources/Poppins/Poppins-Light.ttf");
+}

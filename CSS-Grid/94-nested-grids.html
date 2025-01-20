@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            background-color: gainsboro;
+            width: 500px;
+            font-size: x-large;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 100px);
+            text-align: center;
+            
+        }
+        .one{
+            background-color: rgb(108, 237, 28);
+        }
+        .two{
+            background-color: blue;
+        }
+        .three{
+            background-color: rgb(234, 0, 255);
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .three_1{
+            background-color: rgb(208, 50, 18);
+        }
+        .three_2{
+            background-color: rgb(20, 223, 223);
+        }
+        .three_3{
+            background-color: rgba(199, 12, 180, 0.518);
+        }
+        .four{
+            background-color: black;
+        }
+    </style>
+    <title>Nested Grids</title>
+</head>
+<body>
+    <h1>Nested Grids</h1>
+    <div class="container">
+        <div class="one">One</div>
+        <div class="two">Two</div>
+        <div class="three">
+            <div class="three_1">3.1</div>
+            <div class="three_2">3.2</div>
+            <div class="three_3">3.3</div>
+        </div>
+        <div class="four">Four</div>
+    </div>
+</body>
+</html>

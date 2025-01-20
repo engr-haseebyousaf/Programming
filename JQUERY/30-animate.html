@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animate property</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: darkmagenta;
+            color: azure;
+            position: absolute;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: cornflowerblue;
+            color: azure;
+            position: absolute;
+            right: 10px;
+        }
+        .box h2{
+            text-align: center;
+        }
+        .btns{
+            position: absolute;
+            bottom: 5px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Animated Heading</h2>
+        <h2>Another Heading</h2>
+        <h2>Third Heading</h2>
+        <h2>Fourth Heading</h2>
+    </div>
+    <div class="box2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas similique officia eveniet esse, facilis magnam illo iusto quasi blanditiis accusamus modi dolorem minus ipsa nulla exercitationem eligendi maxime. Reprehenderit, laborum.
+    </div>
+    <div class="btns">
+        <button id="right">right</button>
+        <button id="bottom">bottom</button>
+        <button id="left">left</button>
+        <button id="top">top</button>
+    </div>
+</body>
+<script src="jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#right").click(function(){
+            $(".box").animate(
+                {
+                    right:"20px",
+                },
+                "slow"
+            );
+            $(".box2").animate(
+                {
+                    left:"20px",
+                },
+                "slow"
+            );
+        });
+
+
+        $("#left").click(function(){
+            $(".box").animate(
+                {
+                    left:"10px",
+                },
+                "slow"
+            );
+            $(".box2").animate(
+                {
+                    right:"10px",
+                },
+                "slow"
+            );
+        });
+
+
+        $("#bottom").click(function(){
+            $(".box").animate(
+                {
+                    bottom:"50px"
+                },
+                2000
+            );
+            $(".box2").animate(
+                {
+                    bottom:"50px"
+                },
+                2000
+            );
+
+            $("#top").click(function(){
+            $(".box").animate(
+                {
+                    top:"20px",
+                },
+                "slow"
+            );
+            $(".box2").animate(
+                {
+                    top:"20px",
+                },
+                "slow"
+            );
+        });
+        });
+    })
+</script>
+</html>

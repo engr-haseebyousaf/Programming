@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        th, td{
+            min-width: 90px;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        th, td{
+            padding: 5px;
+            text-align: center;
+            background-color: white;
+        }
+        tbody tr :nth-child(even){
+            background-color: #f2f2f2;
+        }
+        #bg{
+            background-color: #f2f2f2;
+        }
+        table{
+            margin: auto;
+        }
+        #class{
+            caption-side: top;
+        }
+        #name{
+            caption-side: bottom;
+            text-align: right;
+        }
+        th{
+            background-color: #d3d3d3;
+        }
+        .no{
+            border: none;
+        }
+        #b{
+            background-color: #f2f2f2;
+        }
+        #c{
+            background-color: #f2f2f2;
+        }
+        #d{
+            background-color: white;
+        }
+    </style>
+    
+    <title>table properties</title>
+</head>
+<body>
+    <h1>Table properties</h1>
+    <table border="2px" width="50%">
+        <caption id="class"><h1><b>BS IT</b></h1></caption>
+        <thead>
+            <tr>
+                <th>Days</th>
+                <th>8:00-8:50</th>
+                <th>8:50-9:40</th>
+                <th>9:40-11:20</th>
+
+                <th>11:20-1:00</th>
+                <th>2:00-3:40</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Monday</th>
+                <td class="no" colspan="3"></td>
+                
+                <td>CS-408(T) 2<sub>nd</sub> floor, Room 1</td>
+                <td>IT-412(T) 2<sub>nd</sub> floor, lab 2</td>
+            </tr>
+            <tr>
+                <th>Tuesday</th>
+                <td class="no"  colspan="2"></td>
+                
+                <td>CS-406(T) Ground floor, Room 2</td>
+                <td  id="b">CS-410(P) 1<sub>st</sub> floor, Room 3</td>
+                
+
+            </tr>
+            <tr>
+                <th>Wednesday</th>
+                <td class="no" colspan="2"></td>
+                
+                <td>CS-406(P) Ground floor, Room 2</td>
+                <td id="c">IT-412(P) 1<sub>st</sub> floor, Lab 3</td>
+
+                
+            </tr>
+            <tr>
+                <th>Thursday</th>
+                <td class="no"></td>
+                <td>MATH-513 IT Building Room 1</td>
+                <td id="d">CS-408(p) IT Building Room 1</td>
+                <td id="d">CS-410(P) IT Building, Room 2</td>
+                <td>STAT(P) 1<sub>st</sub>floor Room 1</td>
+                
+                
+                
+            </tr>
+            <tr>
+                <th>Friday</th>
+                <td colspan="2">MATHS-513 Math department, Room 2</td>
+                <td>STATS-402 2<sub>nd</sub> floor, Lab 2</td>
+
+                <td class="no" colspan="3"></td>
+                
+                
+            </tr>
+            <caption id="name">Haseeb Yousaf</caption>
+        </tbody>
+    </table>
+</body>
+</html>

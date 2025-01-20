@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container1{
+            height: 500px;
+            width: 700px;
+            color: white;
+            text-align: center;
+            font-size: large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            margin: 20px;
+            background-color: #f5f5f5;
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            /* grid-column-gap: 20px;
+            grid-row-gap: 50px; */
+            grid-gap: 20px 40px;
+
+        }
+        .box1{
+            background-color: rgb(247, 4, 4);
+            padding: 20px;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        .box2{
+            background-color: rgb(247, 117, 4);
+            padding: 20px;
+            grid-column: 2 / 3;
+            grid-row: 2 / span 3;
+        }
+        .box3{
+            background-color: rgb(227, 247, 4);
+            padding: 20px;
+            grid-column: 1 / 2;
+            grid-row: -1 / 2;
+            z-index: 1;
+        }
+        .box4{
+            background-color: rgb(97, 247, 4);
+            padding: 20px;
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+        }
+        .box5{
+            background-color: rgb(4, 198, 247);
+            padding: 20px;
+            grid-area: 2 / 1 / 3 / 2;
+        }
+        .box6{
+            background-color: rgb(73, 4, 247);
+            padding: 20px;
+            grid-column-start: 1;
+            grid-column-end: span 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .container2{
+            height: 100vh;
+            width: 100vw;
+            background-color: blanchedalmond;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            grid-gap: 10px 20px;
+            box-sizing: border-box;
+        }
+        .box11{
+            grid-column: 1 / span 6;
+            grid-row: 1 / 2;
+            background-color: chocolate;
+            border: 2px solid black;
+        }
+        .box22{
+            grid-column: 1 / 2;
+            grid-row: 2 / span 6;
+            background-color: blue;
+            border: 2px solid black;
+        }
+        .box33{
+            grid-column: 2 / 8;
+            grid-row: 2 / 8;
+            background-color: darkmagenta;
+            border: 2px solid black;
+        }
+        .box44{
+            grid-column: 1 / span 6;
+            grid-row: 8 / 9;
+            border: 2px solid black;
+            background-color: black;
+            color: #f5f5f5;
+        }
+    </style>
+    <title>grid items sapnning</title>
+</head>
+<body>
+    <h1>grid-gap</h1>
+    <div class="container1">
+        <div class="box1">one</div>
+        <div class="box2">Two</div>
+        <div class="box3">Three</div>
+        <div class="box4">Four</div>
+        <div class="box5">Five</div>
+        <div class="box6">Six</div>
+    </div>
+    <div class="container2">
+        <div class="box11">
+            <h2>This is the heading</h2>
+        </div>
+        <div class="box22">
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>News</li>
+                <li>Menu</li>
+                <li>Gallery</li>
+            </ul>
+        </div>
+        <div class="box33">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem unde, odit soluta vel, dolores eos sequi illo deserunt libero iusto obcaecati placeat, dolor consequatur quae totam error odio impedit quam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem unde, odit soluta vel, dolores eos sequi illo deserunt libero iusto obcaecati placeat, dolor consequatur quae totam error odio impedit quam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem unde, odit soluta vel, dolores eos sequi illo deserunt libero iusto obcaecati placeat, dolor consequatur quae totam error odio impedit quam.</p>
+        </div>
+        <div class="box44">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, deleniti?</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            background-color: gainsboro;
+            width: 650px;
+            color: white;
+            font-size: x-large;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 100px);
+        }
+        .one{
+            background-color: blue;
+            order: 5;
+        }
+        .two{
+            background-color: black;
+            order: 2;
+        }
+        .three{
+            background-color: blueviolet;
+            order: 3;
+        }
+        .four{
+            background-color: brown;
+            order: 4;
+        }
+        .five{
+            background-color: rebeccapurple;
+            order: 6;
+        }
+        .six{
+            background-color: cadetblue;
+            order: 6;
+        }
+        
+        
+    </style>
+    <title>Grid order</title>
+</head>
+<body>
+    <h1>Grid order</h1>
+    <div class="container">
+        <div class="one">One</div>
+        <div class="two">Two</div>
+        <div class="three">Three</div>
+        <div class="four">Four</div>
+        <div class="five">Five</div>
+        <div class="six">Six</div>
+    </div>
+</body>
+</html>

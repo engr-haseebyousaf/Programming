@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parent(), parentsUntil(), closest() and offsetParent()</title>
+    <style>
+        .outerMost-container{
+            position: relative;
+            top: 30px;
+            display: block;
+            margin-left: auto;
+            background-color: antiquewhite;
+            padding: 20px 30px;
+            width: 500px;
+        }
+        .outer-container{
+            background-color: burlywood;
+            padding: 5px 10px 5px 10px;
+            width: 450px;
+        }
+        .middle-container{
+            background-color: cornflowerblue;
+            padding: 5px 10px 5px 10px;
+            width: 400px;
+        }
+        .inner-container{
+            background-color: cadetblue;
+            padding: 10px;
+            width: 350px;
+        }
+        .innerMost-container{
+            background-color: darkgoldenrod;
+            padding: 10px;
+            width: 300px;
+            display: flex;
+        }
+        .innerMost-container div{
+            border: 1px solid black;
+            width: 40px;
+            height: 60px;
+            background-color: aliceblue;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            line-height: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outerMost-container">
+        <h3>Outer Most Container</h3>
+        <div class="outer-container">
+            <h3>Outer Container</h3>
+            <pre class="middle-container">
+                <h3>middle container</h3>
+                <div class="inner-container">
+                    <h3>Inner Container</h3>
+                    <div class="innerMost-container">
+                        <div class="child-A">A</div>
+                        <div class="child-B">B</div>
+                        <div class="child-C">C</div>
+                        <div class="child-D">D</div>
+                    </div>
+                </div>
+            </pre>
+        </div>
+    </div>
+    <button id="children">children</button>
+    <button id="find">find</button>
+</body>
+<script src="jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#children").click(function(){
+            $(".innerMost-container").children().css({"background-color":"red","color":"white"});
+        });
+
+        $("#find").click(function(){
+            $(".outerMost-container").find(".child-C").css({"background-color":"red","color":"white"});
+        });
+
+    });
+</script>
+</html>

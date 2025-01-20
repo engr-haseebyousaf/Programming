@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Events</title>
+    <style>
+        .box{
+            border: 1px solid black;
+        }
+    </style>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe doloribus praesentium eveniet quaerat neque, minima sequi placeat dolor facere sed, quibusdam distinctio. Porro dolorem voluptate laudantium quo dolorum reiciendis mollitia? Nisi molestias nihil error laudantium illum deleniti voluptatum alias ab.
+    </div>
+
+</body>
+<script>
+    $(document).ready(function(){
+        $("body").keypress(function(){ 
+            $(this).css("background-color","red");
+        });
+        $("body").keydown(function(){//works same as keypress
+            $(this).css("background-color","yellow");
+        });
+        $("body").keyup(function(){
+            $(this).css("background-color","blue");
+        });
+    });
+</script>
+</html>

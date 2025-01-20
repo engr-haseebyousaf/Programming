@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       
+        #box{
+            background-color: pink;
+            box-sizing: border-box;
+            width: min(50%, 600px);
+            font-size: min(50px, 10vw);
+            padding: 10px min(60px, 5vw);
+        }
+        #box2{
+            border: 1px solid black;
+            box-sizing: border-box;
+            background-color: rgba(0, 0, 255, 0.203);
+            width: max(50%, 600px);
+            font-size: max(50%, 10vw);
+            padding: max(50px, 10vw);
+        }
+        #box3{
+            border: 1px solid black;
+            box-sizing: border-box;
+            background-color: darkgray;
+            width: clamp(300px, 50%, 900px);
+            padding: clamp(30px, 5vw, 60px);
+        }
+    </style>
+    <title>min() max() clamp()</title>
+</head>
+<body>
+    <h1>min() max() clamp()</h1>
+    <h2>min()</h2>
+    <div id="box">Haseeb Yousaf</div>
+    <h2>max()</h2>
+    <div id="box2">Haseeb Yousaf</div>
+    <h2>clamp()</h2>
+    <div id="box3">
+        Haseeb Yousaf
+    </div>
+</body>
+</html>

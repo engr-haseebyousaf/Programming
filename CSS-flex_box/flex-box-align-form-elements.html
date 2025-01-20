@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #wrapper{
+            background-color: gainsboro;
+            margin: 50px;
+            padding: 20px;
+            list-style: none;
+        }
+        li{
+            
+            display: flex;
+            padding: 5px 0;
+            
+        }
+        #wrapper li label{
+            flex: 1;
+            
+        }
+        #wrapper li input{
+            flex: 3;
+            
+        }
+        li{
+            justify-content: end;
+        }
+        @media screen and (min-width: 300px) and (max-width:469px) {
+            #wrapper li input{
+                flex: 1;
+            }
+            #wrapper li{
+                flex-direction: column;
+            }
+        }
+        
+        @media screen and (min-width: 540px) {
+            #wrapper li input{
+                flex: 4;
+            }
+        }
+        @media screen and (min-width: 640px) {
+            #wrapper li input{
+                flex: 5;
+            }
+        }
+        @media screen and (min-width: 992px) {
+            #wrapper li input{
+                flex: 8;
+            }
+        }
+        @media screen and (min-width: 1200px) {
+            #wrapper li input{
+                flex: 10;
+            }
+        }
+        
+        
+    </style>
+    <title>Flex-box align form elements</title>
+</head>
+<body>
+    <h1>Flex-box align form elements</h1>
+    <form action="">
+        <ul id="wrapper">
+            <li>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+            </li>
+            <li>
+                <label for="class_name">Class Name</label>
+                <input type="text" name="class_name" id="class_name">
+            </li>
+            <li>
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age">
+            </li>
+            <li>
+                <button type="submit">Save</button>
+            </li>
+        </ul>
+    </form>
+</body>
+</html>

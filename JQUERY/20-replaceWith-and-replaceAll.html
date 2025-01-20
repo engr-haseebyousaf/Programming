@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>replaceWith and replaceAll</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <div class="box">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae fugit officiis ab rerum velit repudiandae cupiditate incidunt, fuga suscipit, quidem alias numquam ipsa sapiente quasi nam molestiae esse dolorem nostrum?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque doloribus sit repudiandae, voluptatem, excepturi maiores corrupti corporis, quo numquam nihil consectetur est quidem fugit culpa quisquam minima dicta beatae possimus!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque non sequi, nihil aperiam ducimus eveniet facere amet ut quidem quam distinctio harum labore explicabo porro voluptate cupiditate voluptates voluptatibus officiis!</p>
+    </div>
+    
+    <button id="replaceWith">replaceWith</button>
+    <button id="replaceAll">replaceAll</button>
+    
+</body>
+<script>
+    $(document).ready(function(){
+        $("#replaceWith").click(function(){
+            $(".box p:nth-child(2)").replaceWith("<h3>Replace with</h3>");
+        });
+        $("#replaceAll").click(function(){
+            $("<h3>Replace all</h3>").replaceAll(".box p");
+        });
+    });
+</script>
+</html>

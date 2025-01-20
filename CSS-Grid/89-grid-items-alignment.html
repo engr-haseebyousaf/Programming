@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            background-color: #f5f5f5;
+            width: 80%;
+            font-family: fantasy;
+            font-size: x-large;
+            color: white;
+            text-align: center;
+            margin: 50px auto 0 auto;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 150px);
+            grid-auto-rows: 80px;
+            /* align-items: start;
+            justify-items: end; */
+            place-items: start end;
+        }
+        .one{
+            background-color: blue;
+        }
+        .two{
+            background-color: blueviolet;
+        }
+        .three{
+            background-color: red;
+            grid-row: span 3;
+            /* align-self: end;
+            justify-self: flex-start; */
+            place-self: flex-end flex-start;
+        }
+        .four{
+            background-color: violet;
+        }
+        .five{
+            background-color: crimson;
+        }
+        .six{
+            background-color: black;
+        }
+        .seven{
+            background-color: darkseagreen;
+        }
+        .eight{
+            background-color: darkslategrey;
+        }
+    </style>
+    <title>Grid implicit and grid explicit</title>
+</head>
+<body>
+    <h1>Grid implicit and grid explicit</h1>
+    <div class="container">
+        <div class="one">One</div>
+        <div class="two">Two</div>
+        <div class="three">Three</div>
+        <div class="four">Four</div>
+        <div class="five">Five</div>
+        <div class="six">Six</div>
+        <div class="seven">Seven</div>
+        <div class="eight">Eight</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four Images Practice</title>
+</head>
+<body>
+    <div id="image">
+        <input type="file" name="images" id="images" multiple accept=".jpg, .png, .jpeg">
+        <div id="image-box"></div>
+    </div>
+</body>
+<script src="jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#images").change(function(){
+            var images = document.getElementById("images").files;
+            console.log(images);
+            console.log(images[0]);
+            if (images.length > 4) {
+                alert("You can only select 4 images");
+            }
+        })
+    })
+</script>
+</html>

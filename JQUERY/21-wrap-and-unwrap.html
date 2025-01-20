@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wrap and unwrap</title>
+    <script src="jquery.js"></script>
+    <style>
+        .box{
+            border: 2px solid black;
+            padding: 10px;
+            width: 500px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae fugit officiis ab rerum velit repudiandae cupiditate incidunt, fuga suscipit, quidem alias numquam ipsa sapiente quasi nam molestiae esse dolorem nostrum?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque doloribus sit repudiandae, voluptatem, excepturi maiores corrupti corporis, quo numquam nihil consectetur est quidem fugit culpa quisquam minima dicta beatae possimus!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque non sequi, nihil aperiam ducimus eveniet facere amet ut quidem quam distinctio harum labore explicabo porro voluptate cupiditate voluptates voluptatibus officiis!</p>
+    </div>
+    
+    <button id="wrap">wrap</button>
+    <button id="unwrap">unwrap</button>
+    
+</body>
+<script>
+    $(document).ready(function(){
+        $("#wrap").click(function(){
+            $(".box p:nth-child(2)").wrap("<h3 id=''></h3>");
+        });
+        $("#unwrap").click(function(){
+            $(".box p:first").unwrap(); 
+        });
+    });
+</script>
+</html>

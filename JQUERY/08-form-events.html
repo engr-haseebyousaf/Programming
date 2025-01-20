@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <form action="" id="form1">
+        <label for="sname">Name</label>
+        <input type="text" name="sname" id="sname"><br><br>
+        <label for="sgmail">Gmail</label>
+        <input type="text" name="sgmail" id="sgmail"><br><br>
+        <label for="scountry">Country</label>
+        <select name="scountry" id="scountry">
+            <option value="Pakistan">Pakistan</option>
+            <option value="India">India</option>
+            <option value="Bangla Desh">Bangla Desh</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+<script>
+    $(document).ready(function(){
+        $("#sname").focus(function(){
+            $(this).css("border","2px solid green");
+            $(this).css("background-color","green");
+        });
+        $("#sname").blur(function(){
+            $(this).css("border","none");
+            $(this).css("background-color","transparent");
+
+        });
+        $("#scountry").blur(function(){
+            $(this).css("background-color","yellow");
+        });
+        $("#sname").select(function(){
+            $(this).css("background-color","blue");
+
+        });
+        $("#form1").select(function(e){
+            e.preventDefault();
+            $("body").css("background-color","pink");
+
+        });
+    });
+</script>
+</html>

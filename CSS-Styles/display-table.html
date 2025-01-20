@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #table{
+            display: table;
+            width: 800px;
+            border: 2px solid black;
+            margin: 0 auto;
+        }
+        #table-header{
+            display: table-header-group;
+            text-align: center;
+            font-weight: bold;
+            background-color: aquamarine;
+        }
+        .table-col-group{
+            display: table-column-group;
+        }
+        .table-col{
+            display: table-column;
+        }
+        #table-col1{
+            background-color: blueviolet;
+        }
+        #table-col2{
+            width: 500px;
+            background-color: cyan;
+        }
+        .table-row{
+            display: table-row;
+        }
+        #table-row{
+            display: table-row-group;
+        }
+        .table-column{
+            display: table-cell;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        #table-footer{
+            display: table-footer-group;
+            text-align: center;
+            font-weight: bold;
+            background-color: darkkhaki;
+        }       
+    </style>
+    <title>Display table</title>
+</head>
+<body>
+    <h1>Display table</h1>
+    <div id="table">
+
+        <div class="table-col-group">
+            <div class="table-col" id="table-col1">1</div>
+            <div class="table-col" id="table-col2">2</div>
+            <div class="table-col" id="table-col3">3</div>
+        </div>
+        <div id="table-header">
+            <div class="table-row">
+                <div class="table-column">Roll no</div>
+                <div class="table-column">Name</div>
+                <div class="table-column">Marks</div>
+            </div>
+        </div>
+        <div id="table-row">
+            <div class="table-row">
+                <div class="table-column">1</div>
+                <div class="table-column">Haseeb</div>
+                <div class="table-column">45</div>
+            </div>
+            <div class="table-row">
+                <div class="table-column" style="vertical-align: middle;">2</div>
+                <div class="table-column">Salman Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aperiam nam, enim, itaque eius sint a perspiciatis fugit labore beatae repellat velit eum officia voluptatum eos consequuntur reprehenderit sunt alias.</div>
+                <div class="table-column">25</div>
+            </div>
+            <div class="table-row">
+                <div class="table-column">3</div>
+                <div class="table-column">Razaai</div>
+                <div class="table-column">100</div>
+            </div>
+        </div>
+        <div id="table-footer">
+            <div class="table-row">
+                <div class="table-column">...</div>
+                <div class="table-column">Salary</div>
+                <div class="table-column">1000$</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

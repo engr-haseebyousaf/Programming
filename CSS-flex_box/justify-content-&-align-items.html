@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .parent{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .container1{
+            background-color: #f5f5f5;
+            color: white;
+            width: 600px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+        }
+        .container2{
+            background-color: gray;
+            color: white;
+            width: 600px;
+            height: 300px;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-evenly;
+        }
+        .container3{
+            background-color: #d7d6d6;
+            color: white;
+            width: 600px;
+            height: 300px;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .item{
+            font-size: x-large;
+            text-align: center;
+            padding: 10px;
+            margin: 5px;
+
+        }
+        .one{
+            background-color: black;
+        }
+        .two{
+            background-color: blue;
+        }
+        .three{
+            background-color: blueviolet;
+        }
+        .four{
+            background-color: chocolate;
+        }
+    </style>
+    <title>Justify-content and align-items</title>
+</head>
+<body>
+    <h1>Justify-content and align-items</h1>
+    <div class="parent">
+        <h2>Justify-content</h2>
+        <div class="container1">
+            <div class="item one">One</div>
+            <div class="item two">Two</div>
+            <div class="item three">Three</div>
+            <div class="item four">Four</div>
+        </div>
+        <h2>align-items</h2>
+        <div class="container2">
+            <div class="item one">One</div>
+            <div class="item two">Two</div>
+            <div class="item three">Three</div>
+            <div class="item four">Four</div>
+        </div>
+        <h2>Justify-content and align-items</h2>
+        <div class="container3">
+            <div class="item one">One</div>
+            <div class="item two">Two</div>
+            <div class="item three">Three</div>
+            <div class="item four">Four</div>
+            </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position and offset</title>
+    <style>
+        .box{
+            width: 80%;
+            border: 2px solid black;
+            padding: 15px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 150px;
+            position: relative;
+        }
+        #cont{
+            position: relative;
+            width: 200px;
+            border: 1px solid black;
+            top: 20px;
+            left: 200px;
+            padding: 10px;
+        }
+        .data{
+            display: flex;
+            width: 500px;
+            border: 2px solid black;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 15px;
+        }
+        .pos{
+            padding: 10px;
+            width: fit-content;
+            background-color: pink;
+            border: 1px solid black;
+            margin-right: auto;
+        }
+        .off{
+            padding: 10px;
+            width: fit-content;
+            background-color: skyblue;
+            border: 1px solid black;
+        }
+    </style>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <div class="box">
+        <p id="cont">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa laborum, qui aut officia quaerat beatae vero rerum, numquam consequuntur cupiditate officiis! Voluptates ab porro voluptatem magnam autem accusantium dolorem?</p>
+        <h3>This is heading three</h3>
+    </div>
+    <button id="position">position</button>
+    <button id="offset">offset</button>
+    <button id="position-set">position set</button>
+    <div class="data">
+        <div class="pos"></div>
+        <div class="off"></div>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+        $("#position").click(function(){
+            console.log($("#cont").position());
+            $(".pos").html("Left : "+$(this).position().left + "<br>" + "Top : "+$(this).position().top);
+        });
+        $("#offset").click(function(){
+            console.log($("#cont").offset());
+            $(".off").html("Left : "+$(this).offset().left + "<br>" + "Top : "+$(this).offset().top);
+        });
+        $("#position-set").click(function(){
+            $(".data").offset({left:0,top:0});
+        });
+    });
+</script>
+</html>

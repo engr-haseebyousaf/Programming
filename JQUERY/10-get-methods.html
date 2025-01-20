@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Methods</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <div class="box diba container">
+        <h2>This is second heading</h2>
+        <p>Lorem ipsum dolor sit <span id="inner-val">amet consectetur</span>, adipisicing elit. Excepturi incidunt, quaerat magnam molestiae officia animi. Obcaecati doloremque, accusantium, reiciendis libero, rem deleniti recusandae nisi ad iusto laboriosam deserunt voluptatem iure.</p>
+    </div>
+    <form action="" id="form1">
+        <label for="sname">Name</label>
+        <input type="text" name="sname" id="sname"><br><br>
+        <label for="sgmail">Gmail</label>
+        <input type="text" name="sgmail" id="sgmail"><br><br>
+        <label for="scountry">Country</label>
+        <select name="scountry" id="scountry">
+            <option value="Pakistan">Pakistan</option>
+            <option value="India">India</option>
+            <option value="Bangla Desh">Bangla Desh</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+<script>
+    $(document).ready(function(){
+        var a = $(".box").text();
+        console.log(a);
+        var b = $(".box h2").html();
+        console.log(b);
+        var c = $(".box").attr("class");
+        console.log(c);
+
+
+        $("#form1").submit(function(){
+            var name = $("#sname").val();
+            var email = $("#sgmail").val();
+            var country = $("#scountry").val();
+            alert("Your Name : " + name + " Your Email : " + email + " Your Country : " + country);
+        });
+        
+    });
+</script>
+</html>

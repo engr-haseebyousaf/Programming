@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        img[alt]{
+            border: 2px solid red;
+        }
+        a[target]{
+            color: red;
+        }
+        input[type]{
+            border: 2px solid red;
+        }
+        input[type='password']{
+            border: 2px solid blue;
+        }
+        img[alt="Flower"]{
+            border: 2px solid blue;
+        }
+        img[title^="image"]{
+            border: 2px solid black;
+        }
+        img[title$="Rose"]{
+            border: 2px solid black;
+        }
+        img[alt*="rose"]{
+            border: 2px solid brown;
+        }
+        img[alt~="Rose"]{
+            border: 2px solid green;
+        }
+    </style>
+    <title>advance selectors(Attribute selectors)</title>
+</head>
+<body>
+    <h1>advance selectors(attribute selectors)</h1>
+    <img src="Images/flower.png" alt="flower Image">
+    <div>Lorem ipsum dolor sit, <a href="" target="_blank">Haseeb</a> amet consectetur adipisicing elit. Non numquam inventore voluptatum quaerat dolorum modi? <a href="">Yousaf</a> Obcaecati dicta molestias explicabo rerum tempora laboriosam, ab cumque aspernatur, <a href="">yoyoyoyoyo</a> alias expedita fugit similique vel.</div>
+    <img src="Images/Red rose buoquet.jpg"><br><br>
+    <form action="">
+        Name <input type="text" name="" id=""><br><br>
+        <label for="">Gender</label>   <label for="male">Male</label><input type="radio" name="gender" id="male">
+        <label for="female">female</label><input type="radio" name="gender" id="female"><br><br>
+        <label for="adress">Adress</label><input type="text" name="adress" id=""><br><br>
+        <label for="password">Password</label><input type="password" name="password" id="">
+        <br><br>
+        <img src="Images/pink rose buoquet.jpg" alt="Flower" title="Flower">
+        <img src="Images/flower.png" alt="Image of a flower" title="image of flower">
+        <img src="Images/Right arrow.png.png" alt="image-of-arrow">
+        <img src="Images/Blue rose.jpg" alt="Flower" title="Blue Rose">
+        <img src="Images/Red rose buoquet.jpg" alt="Redrosebuoquet">
+        <img src="Images/Red rose buoquet.jpg" alt="Red Rose buoquet">
+    </form>
+</body>
+</html>

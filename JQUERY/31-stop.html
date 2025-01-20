@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stop()</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: darkred;
+            color: beige;
+            border: 1px solid black;
+            padding: 10px;
+            box-sizing: border-box;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, magnam!</div>
+    <button id="animate">animate</button>
+    <button id="fadeOut">fadeOut</button>
+    <button id="stop">stop</button>
+    <button id="simpleStop">simpleStop</button>
+</body>
+<script src="jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#animate").click(function(){
+            $(".box").animate({left:"1000px"},3000);
+            $(".box").animate({fontSize:"25px"},3000);
+        });
+        $("#fadeOut").click(function(){
+            $(".box").fadeOut(4000);
+        });
+        $("#simpleStop").click(function(){
+            $(".box").stop();
+        });
+
+    })
+</script>
+</html>

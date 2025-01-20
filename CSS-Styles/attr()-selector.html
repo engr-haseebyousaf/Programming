@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        p{
+            font-size: 37px;
+            font-style: italic;
+            position: relative;
+            left: 100px;
+
+        }
+        p:hover::after{
+            content: attr(data-context);
+            background-color: blue;
+            color: whitesmoke;
+        }
+        p:hover::before{
+            content: attr(class);
+            background-color: red;
+            color: aliceblue;
+        }
+    </style>
+    <title>attr() selector</title>
+</head>
+<body>
+    <h1>attr() selector</h1>
+    <p class=" M " data-context=" Yousaf. ">Haseeb</p>
+</body>
+</html>

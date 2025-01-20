@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #list li:first-child{
+            color: blue;
+        }
+        #list2 li:last-child{
+            color: red;
+        }
+        #list li:nth-child(2n+1){
+            color: rgb(17, 236, 75);
+        }
+        #list2 li:nth-last-child(){
+            color: chocolate;
+        }
+        /* p:nth-of-type(2n){
+            color: goldenrod;
+        } */
+        /* p:nth-last-of-type(2){
+            color: blue;
+        } */
+        /* li:only-child{
+            color: mediumorchid;
+        } */
+        li:only-of-type{
+            color: darkolivegreen;
+        }
+        b:only-of-type{
+            color: gold;
+        }
+        ul:empty{
+            border: 2px solid red;
+        }
+        div:empty{
+            border: 2px solid red;
+        }
+        p:not(.test){
+            color: blue;
+        }
+        p:lang(facere){
+            color: darksalmon;
+
+        }
+        a:hover{
+            color: red;
+        }
+        /* a:visited{
+            color: gold;
+        } */
+        a:active{
+            color: pink;
+        }
+        dd{
+            background-color: aliceblue;
+        }
+        ul a:link{
+            color: red;
+        }
+        dd:target{
+            background-color: gold;
+        }
+        input[type="checkbox"]:checked{
+            box-shadow: 0 0 0 3px red;
+        }
+        input[type="text"]:focus{
+            background-color: wheat;
+            border: 5px solid greenyellow;
+        }
+        input[type="number"]:disabled{
+            border: 4px solid red;
+            background-color: pink;
+        }
+        input[type="text"]:required{
+            background-color: blueviolet;
+        }
+        input[type="text"]:placeholder-shown{
+            background-color: aliceblue;
+            border: 3px solid red;
+        }
+        input[type="number"]:in-range{
+            background-color: aquamarine;
+        }
+        input[type="number"]:out-of-range{
+            background-color: red;
+        }
+        input[type="email"]:read-only{
+            background-color: rgb(226, 183, 43);
+        }
+        input:checked{
+            box-shadow: 0 0 0 3px burlywood;
+        }
+        input:default + label{
+            color: red;
+        }
+        :is(#test1, #test2){
+            color: red !important;
+        }
+        :is(#test1, #test2) :is(p){
+            color: rgb(0, 255, 102) !important;
+        }
+        #box{
+            background-color: aqua;
+            width: 300px;
+            aspect-ratio: 1;
+        }
+        #box:fullscreen{
+            background: #5433FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+;
+        }
+    </style>
+    <title>pseudo-classes selectors</title>
+</head>
+<body>
+    <h1>pseudo-classes selectors</h1>
+    <ul>
+        <li><a href="#HTML">What is HTML</a></li>
+        <li><a href="#CSS">What is CSS</a></li>
+        <li><a href="#JS">What is JavaScript</a></li>
+    </ul>
+    <ul id="list">
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, consectetur?</li>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, consectetur?</li>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, consectetur?</li>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, consectetur?</li>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, consectetur?</li>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, consectetur?</li>
+    </ul>
+    <div></div>
+    <br><br>
+    <ul id="list2">
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, consectetur?</li>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, consectetur?</li>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, consectetur?</li>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, consectetur?</li>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, consectetur?</li>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, consectetur?</li>
+    </ul>
+    <ul></ul>
+    <ol>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto quod ex ullam voluptate, totam suscipit eos pariatur inventore natus iure!</li>
+        <b>Lorem, ipsum.</b>
+        <p class="test">Lorem ipsum dolor sit amet.</p>
+    </ol>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus non, qui modi in temporibus maxime voluptatem quos soluta. Inventore placeat eligendi incidunt ipsum eos. Repellat molestias soluta aliquam consectetur cum!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique est rem sunt perspiciatis ipsa expedita quam accusamus fugiat a iure repellendus, non cumque tempora assumenda illum veniam nulla, explicabo aliquid alias. Consequuntur ipsum nam laudantium non incidunt minima vitae adipisci veritatis dolore facere ab ipsa, autem quas hic officia deleniti dolor ea. Sapiente reiciendis maxime ad fuga? Facilis, adipisci nemo quasi assumenda corporis rerum, debitis unde sint reiciendis odio quia cumque dolor ipsam facere nisi, quo magnam. Architecto dolor repellendus fugiat facilis nam rerum eaque at aspernatur, porro quasi natus, tempore exercitationem tenetur numquam. Tempore dolor esse sunt odio placeat.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, ipsa consequatur non est laborum nulla eius sit sunt delectus dolorem quas laudantium voluptatem ipsum cum veritatis id quibusdam? Ipsum illo asperiores iusto corporis error fugit ab sint in ut exercitationem labore possimus, nisi dicta velit ratione itaque hic voluptate explicabo?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae autem eius temporibus nostrum, expedita illum, quas facilis eos molestiae praesentium, quam sapiente exercitationem vero explicabo dolores distinctio inventore provident accusantium.</p>
+    <div>
+        hello
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate pariatur id laboriosam ducimus! Cupiditate, perspiciatis sunt! Suscipit a odio reiciendis, necessitatibus nihil perspiciatis officiis quasi et aut labore deserunt tempore consequuntur quod ut ipsa, debitis eveniet similique quibusdam. Libero placeat qui rem itaque nihil dolorem consectetur alias fuga voluptatibus quo.</p>
+        <p class="test">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, eveniet nostrum. Obcaecati, quia! Quisquam possimus atque nostrum deleniti ipsam, voluptate minima est deserunt porro ea vitae blanditiis facere illum veniam iure laborum, recusandae placeat molestiae enim laudantium officiis amet. Blanditiis eos, quos asperiores aspernatur numquam odit optio quae ipsam qui?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, itaque. Dolores modi odio totam provident. Magnam asperiores amet, quae dolores earum voluptas. Perspiciatis quas animi culpa, mollitia fugiat nemo quisquam ab consequatur id? Atque aspernatur perspiciatis, architecto nemo repudiandae inventore, labore expedita dolorem ut nihil sed alias aliquam, velit facilis?</p>
+    </div>
+    <div>
+        hello
+        <p lang="en">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni harum dolorum obcaecati illum vel iure labore, eaque neque! Deserunt, alias!</p>
+        <p lang="facere">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et at adipisci amet? Saepe rem assumenda placeat tenetur in fuga!</p>
+        <p lang="Saepe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur facere animi hic molestiae. Architecto eveniet consectetur id. Fugiat, eum.</p>
+
+    </div>
+    
+    <dl>
+        <dt>HTML</dt>
+        <dd id="HTML">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem iure debitis consequatur? Tempore suscipit assumenda, eos in ab ipsa officia?</dd>
+        <dt>CSS</dt>
+        <dd id="CSS">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus deserunt, minus modi sint cum facilis consectetur laborum amet? Pariatur, ipsum.</dd>
+        <dt>JavaScript</dt>
+        <dd id="JS">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, reiciendis atque molestias provident facere optio itaque pariatur totam voluptatum maxime.</dd>
+
+    </dl>
+    <fieldset>
+        <legend>Form related pseudo-classes</legend>
+        <form action="">
+            <label for="f_name">First name</label> <input type="text" name="name" id="f_name" required><br><br>
+            <label for="s_name">Second name</label> <input type="text" name="name" id="s_name" value="Yousaf"><br><br>
+            <label for="why">Why are you</label> <input type="text" name="why" id="why" placeholder="Why are you filing this form?"><br><br>
+            <label for="age">Your age</label> <input type="number" name="age" id="age" min="10" max="100" disabled><br><br>
+            <label for="e-mail">Your E-mail id</label> <input type="email" name="e-mail" id="e-mail" readonly><br><br>
+            <label for="hobbies">Your hobbies</label> <input type="checkbox" name="" id="cricket"><label for="cricket">Cricket</label>
+            <input type="checkbox" name="" id="football" checked><label for="football">Football</label>
+            <input type="checkbox" name="" id="hockey"><label for="hockey">Hockey</label><br><br>
+            <label for="">Your gender</label> <input type="radio" name="gender" id="male"><label for="male">Male</label>
+            <input type="radio" name="gender" id="female"><label for="female">Female</label><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </fieldset>
+    <div id="test1">
+        <h1>Heading</h1>
+        <h2>Sub Heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sequi inventore officiis? Nulla voluptatibus temporibus maiores dignissimos accusamus impedit, tenetur sapiente voluptatum minima? Aspernatur, illum eligendi accusantium cum hic, aliquid quisquam repudiandae expedita animi corporis velit. Ratione culpa magni officia accusantium ut aliquam voluptatibus earum iste, nam unde ea quisquam tempora maiores velit temporibus! Autem voluptas nisi, veniam, dicta odio minima animi debitis nulla iure voluptates sint hic ad modi corrupti inventore esse sapiente! Veritatis dicta asperiores vero autem sint, voluptatibus dolores eius error ducimus iure quae praesentium optio, aperiam aliquid libero sequi maxime quidem adipisci. Quas laboriosam fugit dolor.</p>
+        <h3>Subheading</h3>
+    </div>
+    <div id="test2">
+        <h1>Heading 2</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quod laudantium rem iste dolorum corporis eos omnis non porro modi?</p>
+    </div>
+    <img src="Images/Blue rose.jpg" id="box"><br>
+    <button onclick="document.getElementById('box').requestFullscreen()">Click to full screen</button>
+</body>
+</html>

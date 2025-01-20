@@ -1,0 +1,223 @@
+/* Defining Colors */
+:root{
+    --background-grey-color: #cbcbcb;
+    --element-divider-color: rgb(201, 7, 7);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+p{
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Rubik', sans-serif;
+}
+.main{
+    width: inherit;
+    background-color: var(--background-grey-color);
+}
+h2{
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Rubik', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+}
+h3{
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Rubik', sans-serif;
+    font-size: x-large;
+    text-align: center;
+}
+.sec1{
+    min-height: 100vh;
+    border: 2px solid black;
+    background-image: url(Images/outdoor-adventure-yoast-seo.jpg);
+    background-attachment: fixed;
+}
+
+/* Second portion */
+.sec2{
+    
+    display: flex;
+    flex-direction: row;
+    background-color: #dcdcdc;
+}
+#quote1{
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Rubik', sans-serif;
+    font-size: larger;
+    margin: auto auto;
+}
+#writes{
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Rubik', sans-serif;
+    margin-left: 200px;
+    font-size: medium;
+}
+
+.upcoming-events{
+    margin-top: 40px;
+    width: 100px;
+    margin-top: 10px;
+}
+.element-divider{
+    display: block;
+    border-top: 4px solid var(--element-divider-color);
+    border-radius: 50px;
+    
+    
+}
+.upcoming-events > .element-divider{
+    width: 100px;
+    position: absolute;
+    left: 47%;
+}
+.upcoming-events > h2{
+    display: block;
+    width: 100vw;
+    margin-bottom: 10px;
+    margin-top: 60px;
+}
+/* Third Partition */
+.sec3{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.sec3 > .con{
+    flex-basis: 38%;
+    margin: 50px auto;
+}
+.con > *{
+    margin-bottom: 30px;
+}
+.con > .inner-text > *{
+    margin-bottom: 20px;
+}
+.con > .inner-text > p{
+    line-height: 30px;
+    text-align: center;
+}
+.inner-image > img{
+    border-radius: 8px;
+}
+.inner-image{
+    border-radius: 8px;
+    box-shadow: 10px 10px 3px grey;
+}
+/* Button Control */
+.button-submain{
+    display: inline-block;
+    border: 1px solid black;
+    padding: 0 30px;
+
+    border-radius: 30px;
+    background-color: var(--element-divider-color);
+}
+.sec3 > .con > .button-main > .button-submain{
+    margin-left: 35%;
+}
+.button-block{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.button-icon{
+    margin-left: 8px;
+}
+.button{
+    padding: 1px;
+    width: fit-content;
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-size: 14px;
+}
+/* Section number 4 */
+.sec4{
+    background: url(Images/section-bg-img.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    max-height: 100vh;
+    padding-bottom: 50px;
+    background-color: var(--background-grey-color);
+}
+.sec4 > #container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 51vw;
+    height: 100%;
+    width: 100%;
+}
+.sec4 > #container > .content-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 30% 0;
+}
+.sec4 > #container > .content-box > .item{
+    margin: 20px 0;
+}
+.sec4 > #container > .content-box > .element-divider{
+    width: 50px;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+/* Section number 5 */
+.sec5{
+    width: 100vw;
+    height: 100vh;
+    padding: 50px;
+}
+.sec5 > .box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+}
+.sec5 > .box > .content-box{
+    width: 36%;
+    
+}
+.sec5 > .box{
+    height: 70%;
+}
+.sec5 > .box > .images1{
+    width: 31%;
+    flex-grow: 1;
+    margin-right: -50px;
+}
+.sec5 > .box > .images2{
+    width: 31%;
+    flex-grow: 1;
+    margin-right: -50px;
+}
+.image{
+    width: 92%;
+    margin: 10px;
+}
+.box > .content-box > .heading{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.box > .content-box > .element-divider, p{
+    margin-bottom: 50px;
+    line-height: 30px;
+    font-size: medium;
+}
+.sec6{
+    
+    height: 150px;
+}
+.sec6 > .content, .copyright{
+    display: inline-block;
+}

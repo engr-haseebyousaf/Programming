@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hide(), show() and toggle()</title>
+    <style>
+        .box{
+            width: 300px;
+            border: 1px solid black;
+            background-color: chocolate;
+            padding: 10px;
+
+        }
+        .container{
+
+            width: fit-content;
+            display: flex;
+        }
+        .box1{
+            width: 300px;
+            border: 1px solid black;
+            background-color: red;
+            color: white;
+            padding: 10px;
+        }
+        .box2{
+            width: 300px;
+            border: 1px solid black;
+            background-color: blue;
+            color: white;
+            padding: 10px;
+        }
+        .box3{
+            width: 300px;
+            border: 1px solid black;
+            background-color: green;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel illum impedit cum rem non aliquid aspernatur optio totam expedita fugit iure recusandae, debitis perspiciatis illo vero, sint eum ratione nulla?
+    </div>
+    <div class="container">
+        <div class="box1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam vitae excepturi perspiciatis voluptatem a sed exercitationem dignissimos eaque, ratione ex beatae blanditiis at. Quaerat doloremque non in assumenda accusantium voluptates.</div>
+        <div class="box2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit maxime quam labore porro consequuntur facilis, magnam tempora eveniet ducimus quae consectetur delectus eos nobis laboriosam incidunt. Porro animi quo aliquid.</div>
+        <div class="box3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam expedita, assumenda omnis magnam ipsum dolor, amet delectus eos sunt deleniti non sint nostrum natus. A magni facilis asperiores iste modi.</div>
+    </div>
+    <button id="slideUp">slideUp</button>
+    <button id="slideDown">slideDown</button>
+    <button id="slideToggle">slideToggle</button>
+</body>
+<script src="jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#slideUp").click(function(){
+            $(".box").slideUp("slow",function(){
+                $(".box3").slideUp("slow",function(){
+                    $(".box2").slideUp("slow",function(){
+                        $(".box1").slideUp("slow");
+                    });
+                });
+            })
+        });
+
+        $("#slideDown").click(function(){
+            $(".box").slideDown("fast",function(){
+                $(".box3").slideDown("fast",function(){
+                    $(".box2").slideDown("fast",function(){
+                        $(".box1").slideDown("fast");
+                    });
+                });
+            })
+        });
+        
+        $("#slideToggle").click(function(){
+            $(".box").slideToggle(4000,function(){
+                $(".box3").slideToggle(4000,function(){
+                    $(".box2").slideToggle(4000,function(){
+                        $(".box1").slideToggle(4000);
+                    });
+                });
+            })
+        });
+    })
+</script>
+</html>

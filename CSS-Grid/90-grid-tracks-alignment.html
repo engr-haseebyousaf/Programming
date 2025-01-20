@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            background-color: #f5f5f5;
+            width: 700px;
+            height: 700px;
+            display: grid;
+            grid-template-columns: repeat(2, 150px);
+            grid-template-rows: repeat(4, 100px);
+            grid-auto-rows: 100px;
+            grid-gap: 10px;
+            /* align-content: space-between;
+            justify-content: center; */
+            place-content: space-between center;
+        }
+        .one{
+            background-color: aqua;
+        }
+        .two{
+            background-color: aquamarine;
+        }
+        .three{background-color: blue;
+        grid-row: span 3;}
+        .four{background-color: blueviolet;}
+        .five{background-color: burlywood;}
+        .six{background-color: darkcyan;}
+        .seven{background-color: cornflowerblue;
+        grid-column: span 2;}
+        .eight{background-color: crimson;}
+    </style>
+    <title>Grid tracks alignment</title>
+</head>
+<body>
+    <h1>Grid tracks alignment</h1>
+    <div class="container">
+        <div class="one">One</div>
+        <div class="two">Two</div>
+        <div class="three">three</div>
+        <div class="four">Four</div>
+        <div class="five">Five</div>
+        <div class="six">Six</div>
+        <div class="seven">Seven</div>
+        <div class="eight">Eight</div>
+    </div>
+</body>
+</html>

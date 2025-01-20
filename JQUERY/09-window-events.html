@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Events</title>
+    <style>
+        .box::-webkit-scrollbar {
+    width: 20px; /* Width of the scrollbar */
+}
+
+        .box::-webkit-scrollbar-track {
+    background: rgba(20, 238, 223, 0.719); /* Track color */
+}
+
+.box::-webkit-scrollbar-thumb {
+    background: red; /* Thumb color */
+}
+
+
+        .box{
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+            overflow: auto;
+            background-color: pink;
+            scrollbar-color: red;
+            scroll-behavior: smooth;
+            scrollbar-width: 20px;
+        }
+    </style>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi exercitationem, vel rerum quia at saepe deserunt quidem minus nisi beatae iste architecto maiores quo quae non ducimus. Quo corrupti obcaecati sit numquam, harum at autem ut voluptatum quod quis aliquid culpa itaque asperiores, laboriosam architecto ad reprehenderit optio, ullam inventore iusto incidunt earum voluptatibus et. Rerum possimus totam, officiis accusamus quis molestias magnam enim saepe reprehenderit dignissimos nemo? Illo quis cupiditate accusantium ducimus illum exercitationem quas ut veritatis! Repudiandae, suscipit delectus magnam, ab dolores eaque totam, dicta modi consequatur vitae ullam voluptate. Inventore fugiat officia ducimus nihil, vitae vel accusamus, itaque minima laboriosam cupiditate consequuntur voluptates quos voluptate? Quis totam, harum laboriosam est vitae rem architecto libero sapiente esse quidem fugiat fugit explicabo temporibus tempore, neque quasi error autem possimus at sint corporis incidunt quo aperiam adipisci? Vero unde, qui voluptas facere iste autem. Reprehenderit natus asperiores tempore mollitia quasi ipsa minima officia quae beatae illo pariatur labore, quod maxime doloremque quo in fugiat enim aperiam assumenda harum magnam molestias deserunt ducimus! Dicta quisquam maiores ratione maxime perferendis sint nulla quaerat in ipsam, velit quia officiis itaque, tempora quidem ullam aut suscipit rem harum, deleniti quas ipsa ut facere. Maiores animi ipsa sapiente debitis id corporis nostrum modi ab recusandae error consequuntur fugiat incidunt, explicabo cumque ea amet neque voluptate culpa, at ut rerum facere dolor. Veniam omnis enim explicabo, quidem ipsam veritatis reprehenderit modi nam molestias, minus doloremque nobis ad perferendis cum, hic quasi placeat delectus perspiciatis assumenda possimus quo facere minima ea aliquid? Delectus ut maiores dolor possimus aperiam voluptate esse quae, vero pariatur! Repellendus dolores, quia vero veniam maxime id quaerat. Voluptatem, possimus! Officia inventore neque molestiae at, accusantium voluptatibus aliquid. Adipisci unde incidunt voluptate amet ipsum iure suscipit placeat at, corporis, inventore possimus, praesentium quis ex?
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+        $(".box").scroll(function(){
+            console.log("You have scrolled!");
+        });
+        $(".box").resize(function(){
+            console.log("You have Resized!");
+        });
+    });
+</script>
+</html>

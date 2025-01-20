@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            background-color: rgb(201, 201, 201);
+            width: 600px;
+            height: 300px;
+            color: white;
+            font-size: larger;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            align-items: center;
+        }
+        .item{
+            margin: 5px;
+            padding: 10px;
+        }
+        .one{
+            background-color: rgb(29, 98, 159);
+            order: 2;
+        }
+        .two{
+            background-color: rgb(26, 216, 64);
+            order: 1;
+        }
+        .three{
+            background-color: rgb(223, 230, 16);
+            order: 0;
+        }
+        .four{
+            background-color: rgb(220, 19, 19);
+            order: -1;
+        }
+    </style>
+    <title>Flexbox order</title>
+</head>
+<body>
+    <h1>Align self</h1>
+    <div class="container">
+        <div class="item one">One</div>
+        <div class="item two">Two</div>
+        <div class="item three">Three</div>
+        <div class="item four">Four</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .box{
+            width: 200px;
+            background-color: burlywood;
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+    <title>Basic syntax</title>
+</head>
+<body>
+    <h1>Basic Syntax of jquery</h1>
+    <div id="box1" class="box">
+        <h2>First paragraph</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quidem, repellendus similique nobis consequatur non dolorem illum quam cupiditate provident sequi dolore! Aliquid voluptatem voluptates libero nesciunt fuga quam sapiente.</div>
+    <div id="box2" class="box">
+        <h2>Second paragraph</h2>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, perferendis commodi architecto amet eligendi laborum laudantium consequuntur explicabo libero est consequatur a dolores cumque quo aperiam dolor ducimus! Optio, animi!</div>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            var a = $('#box1').html();
+            console.log(a);
+            var b = $('#box2').html();
+            console.log(b);
+        });
+    </script>
+</body>
+</html>

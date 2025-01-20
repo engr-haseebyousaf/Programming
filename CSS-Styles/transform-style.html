@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #base{
+            width: 400px;
+            height: 250px;
+            border: 1px solid black;
+            margin: 100px 0 0 100px;
+            background-color: gray;
+            transform: rotateY(30deg);
+            transform-origin: left bottom;
+            perspective: 800px;
+            transform-style: preserve-3d;
+        }
+        #box{
+            width: 400px;
+            height: 250px;
+            background-color: chartreuse;
+            transform: rotateX(60deg);
+
+        }
+    </style>
+    <title>transform-style</title>
+</head>
+<body>
+    <h1>transform style</h1>
+    <div id="base">
+        <div id="box">transform-style: preserve-3D;</div>
+    </div>
+</body>
+</html>

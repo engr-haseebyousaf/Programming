@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hide(), show() and toggle()</title>
+    <style>
+        .box{
+            width: 300px;
+            border: 1px solid black;
+            background-color: chocolate;
+            padding: 10px;
+            position: absolute;
+            left: 60px;
+            top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel illum impedit cum rem non aliquid aspernatur optio totam expedita fugit iure recusandae, debitis perspiciatis illo vero, sint eum ratione nulla?
+    </div>
+    <button id="hide">hide</button>
+    <button id="show">show</button>
+    <button id="toggle">toggle</button>
+</body>
+<script src="jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#hide").click(function(){
+            $(".box").hide("slow",function(){
+                console.log("box is hidden slowly");
+            })
+        });
+        $("#show").click(function(){
+            $(".box").show("fast",function(){
+                console.log("box is shown fastly");
+            })
+        });
+        $("#toggle").click(function(){
+            $(".box").toggle(4000,function(){
+                console.log("box is toggle customly");
+            })
+        });
+    })
+</script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-decoration-break</title>
+    <style>
+        #box{
+            background-color: burlywood;
+            font-size: larger;
+            border: 2px solid black;
+            line-height: 50px;
+            padding: 10px;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+            background-image: linear-gradient(red, yellow);
+        }
+    </style>
+</head>
+<body>
+    <h1>box-decoration-break</h1>
+    <span id="box">Lorem,<br> ipsum dolor sit amet consectetur <br> adipisicing elit.<br> Harum accusamus veniam commodi <br>provident modi fugit.</span>
+</body>
+</html>

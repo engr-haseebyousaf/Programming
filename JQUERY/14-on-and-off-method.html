@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>on and off method</title>
+    <style>
+        .box{
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .first{
+            background-color: rgb(208, 0, 0);
+            width: 200px;
+        }
+        .second{
+            background-color: rgba(0, 0, 255, 0.113);
+        }
+        .third{
+            background-color: rgba(0, 255, 255, 0.402);
+        }
+    </style>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore eveniet vitae corporis eligendi tempora reiciendis officiis labore rerum minus repellendus maiores quod quam, id commodi, dolor sed consequatur enim aliquam!
+    </div>
+    <button id="off">off method</button>
+</body>
+<script>
+    $(document).ready(function(){
+        $(".box").on({
+            
+            "mouseover":function(){
+                $(this).addClass("second");
+            },
+            "mouseout":function(){
+                $(this).addClass("third");
+            },
+            "click":function(){
+                $(this).addClass("first");
+            }
+        });
+        $(".box").off("mouseover mouseout");
+    });
+</script>
+</html>

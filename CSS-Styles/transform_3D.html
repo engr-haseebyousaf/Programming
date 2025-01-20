@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #base{
+            width: 350px;
+            height: 200px;
+            background-color: gray;
+            font-size: 18px;
+            text-align: center;
+            margin: 100px 0 0 100px;
+            float: left;
+        }
+        #box{
+            width: 350px;
+            height: 200px;
+            background-color: blueviolet;
+            transform-origin: center bottom;
+            transform: perspective(800px) rotateX(30deg);
+        }
+        #base2{
+            width: 350px;
+            height: 200px;
+            background-color: gray;
+            font-size: 18px;
+            text-align: center;
+            margin: 100px 0 0 100px;
+            float: left;
+        }
+        #box2{
+            width: 350px;
+            height: 200px;
+            background-color: rgb(234, 255, 0);
+            transform-origin: center bottom;
+            transform: perspective(800px) rotateY(30deg);
+        }
+        #base3{
+            width: 350px;
+            height: 200px;
+            background-color: gray;
+            font-size: 18px;
+            text-align: center;
+            margin: 100px 0 0 100px;
+            float: left;
+        }
+        #box3{
+            width: 350px;
+            height: 200px;
+            background-color: rgb(0, 157, 255);
+            transform-origin: center bottom;
+            transform: perspective(800px) rotateZ(30deg);
+        }
+        #base4{
+            width: 350px;
+            height: 200px;
+            background-color: gray;
+            font-size: 18px;
+            text-align: center;
+            margin: 100px 0 0 100px;
+            float: left;
+        }
+        #box4{
+            width: 350px;
+            height: 200px;
+            background-color: rgb(0, 255, 21);
+            transform: perspective(800px) rotateY(60deg) translateZ(100px);
+        }
+    </style>
+    <title>transform 3D</title>
+</head>
+<body>
+    <h1>transform 3D</h1>
+    <div id="base">
+        <div id="box">RotateX with perspective</div>
+    </div>
+    <div id="base2">
+        <div id="box2">rotateY with perspective</div>
+    </div>
+    <div id="base3">
+        <div id="box3">rotateZ with perspective</div>
+    </div>
+    <div id="base4">
+        <div id="box4">translateZ with perspective & rotate</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            background-color: #f5f5ff;
+            width: 80%;
+            display: grid;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: x-large;
+            text-align: center;
+            
+            grid-template-columns: min-content 1fr 1fr;
+            grid-template-rows: repeat(2, minmax(100px, min-content));
+        }
+        .one{
+            background-color: cornflowerblue;
+
+        }
+        .two{
+            background-color: bisque;
+        }
+        .three{
+            background-color: cadetblue;
+        }
+        .four{
+            background-color: darkcyan;
+        }
+        .five{
+            background-color: navajowhite;
+        }
+        .six{
+            background-color: greenyellow;
+        }
+    </style>
+    <title>Grid min max function</title>
+</head>
+<body>
+    <h1>Grid minmax function</h1>
+    <div class="container">
+        <div class="one">One Lorem ipsum, dolor sit amet Lorem, ipsum dolor sit amet consectetur adipisicing elit. consectetur adipisicing elit. Inventore, incidunt!</div>
+        <div class="two">Two</div>
+        <div class="three">Three</div>
+        <div class="four">Four</div>
+        <div class="five">Five</div>
+        <div class="six">Six</div>
+    </div>
+</body>
+</html>

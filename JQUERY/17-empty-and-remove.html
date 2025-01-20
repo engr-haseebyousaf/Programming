@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After and Before</title>
+    <script src="jquery.js"></script>
+    <style>
+        .box{
+            width: 300px;
+            border: 2px solid black;
+            padding: 10px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto culpa, quidem voluptates, dolorum, cupiditate earum non enim maxime numquam asperiores quos beatae cumque est ab nihil. Non deserunt illum quis!
+    </div>
+    <button id="appendTo">appendTo</button>
+    <button id="prependTo">prependTo</button>
+    
+</body>
+<script>
+    $(document).ready(function(){
+        $("#appendTo").click(function(){
+            $("<h3>This is appendTo</h3>").appendTo(".box");
+        });
+        $("#prependTo").click(function(){
+            $("<h3>This is prependTo</h3>").prependTo(".box");
+        });
+    });
+</script>
+</html>

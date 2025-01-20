@@ -1,0 +1,369 @@
+/* Responsive Section */
+@media screen and (max-width:992px) {
+    #home-navbar>.navbar-nav>.nav-item> .nav-link{
+        width: fit-content;
+    }
+    #home-navbar>.navbar-nav>.nav-item> .nav-link{
+        color: #fff;
+        font-size: large;
+        min-width: 50%;
+        padding: 20px 10px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    #home-navbar>.navbar-nav .nav-link:hover{
+        border-bottom: 1px solid var(--dark-gold);
+    }
+    #call-header-number-button{
+        background-color: var(--dark-gold);
+        border: 3px solid var(--dark-gold);
+        border-radius: 0;
+        margin-top: 12px;
+        padding: 15px 40px;
+        width: fit-content;
+    }
+    #call-header-number-button:hover{
+        background-color: transparent;
+        border: 3px solid var(--dark-gold);
+        color: var(--dark-gold);
+    }
+    #header-heading{
+        font-size: 5.7rem;
+        line-height: 70px;
+    }
+    #header-subheading-text{
+        font-size: 1.4rem;
+    }
+    .header-section-sub-heading{
+        font-size: 2.7rem !important;
+    }
+    p{
+        font-size: initial;
+    }
+    /* Widget 1 Section */
+    .cars-row{
+        padding-bottom: 30px !important;
+    }
+    /* Choose Us Section  */
+    #choose-us-section-right-section{
+        margin: 0 auto 0 auto;
+        display: block;
+        padding-left: 5px !important;
+    }
+    #choose-us-section-left-img-subsection{
+        display: none;
+    }
+    #choose-us-section{
+        background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../Images/bg-05-free-img.jpg);
+        background-repeat: no-repeat;
+        background-position: center 20%;
+        background-size: contain;
+    }
+    #choose-us-section-numbers-section{
+        padding-top: 50px !important;
+    }
+    .choose-us-section-right-section-bottom-paragraph p{
+        color: black !important;
+    }
+    /* ThankYou Section  */
+    #thank-you-section-heading{
+        font-size: 6.3rem;
+        line-height: 6rem;
+    }
+    #thank-you-section-sub-heading{
+        font-size: 25px !important;
+    }
+    #rent-online-button-sub-section{
+        margin-right: 5vw;
+    }
+    #thank-you-section-background{
+        padding: 80px 0 50px 0;
+    }
+    /* Contact Section  */
+    #contact-section-number{
+        font-size: 110px;
+    }
+    #contact-section-rent-portion{
+        margin-bottom: 10vh;
+    }
+}
+@media screen and (max-width:768px) {
+    #header-subheading-text{
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+    .header-section-sub-heading{
+        font-size: 2.2rem !important;
+    }
+    .header-section-sub-heading{
+        font-size: 2.2rem !important;
+    }
+    /* Widget 1 Section */
+    .widget-1-content{
+        padding-top: 150px !important;
+        position: relative;
+        top: -50px;
+    }
+    #widget-1-background-black{
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+        max-width: 100%;
+    }
+    #widget-1-side-img{
+        display: none;
+    }
+    #widget-1-background{
+        background-image: url(../Images/about-01-free-img.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .cars-row{
+        padding-bottom: 30px !important;
+    }
+    .widget1-header{
+        width: 100%;
+        color: var(--dark-gold);
+        z-index: 0;
+        font-weight: 700;
+        line-height: 3.7rem;
+        margin-bottom: 80px;
+    }
+    /* Our Services Section  */
+    #our-services-section-our_services{
+        font-size: 1.1rem;
+    }
+    .services-section-header{
+        font-size: 3rem;
+    }
+    /* Why choose Us Section */
+    #choose-us-section-heading{
+        font-size: 2.5rem;
+    }
+    .choose-us-section-right-section-bottom-paragraph{
+        font-size: 1rem !important;
+    }
+    .choose-us-section-number{
+        font-size: 7rem;
+    }
+    /* ThankYou Section  */
+    #thank-you-section-heading{
+        font-size: 4.8rem;
+        line-height: 5rem;
+    }
+    #thank-you-section-sub-heading{
+        font-size: 22px !important;
+    }
+    #rent-online-button-sub-section{
+        margin-right: 10vw;
+    }
+    /* Contact Section  */
+    #contact-section-number{
+        font-size: 80px;
+    }
+}
+@media screen and (min-width:576px) {
+    /* Header Section  */
+    .navbar-toggler{
+        margin-left: auto;
+    }
+    #home-header-coheading{
+        font-size: medium;
+    }
+    #header-subheader-arrow{
+        align-self: center !important;
+    }
+    
+    
+}
+@media screen and (max-width:576px){
+    #header-subheading{
+        width: 40%;
+        margin-left: 35%;
+        line-height: 12px;
+    }
+    #header-heading{
+        padding-top: 20px;
+        font-size: 4.5rem;
+        margin-left: 5%;
+        line-height: 60px;
+    }
+    #header-subheader-arrow{
+        align-self: center ;
+    }
+    
+    .header-section-sub-heading{
+        width: 75% !important;
+        
+    }
+    /* Cars Section */
+    .container-fluid .row .cars{
+        margin-top: 10px;
+    }
+    /* Widget 1 Section */
+    .widget-1-content{
+        width: 80%;
+        margin: auto;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .widget-1-content h5{
+        font-size: 1.2rem;
+    }
+    .widget1-header{
+        width: 100%;
+        color: var(--dark-gold);
+        z-index: 0;
+        font-weight: 700;
+        font-size: 3rem;
+        position: relative;
+    }
+    .widget-1-button{
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .choose-us-section-right-section-bottom-paragraph p{
+        padding: 0;
+        margin: 0;
+    }
+    /* About Us Section  */
+    .services-section-container{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .services-section-header{
+        font-size: 2.5rem;
+    }
+    .services-section-services-subsection{
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+    /* Why Choose Us Section  */
+    #choose-us-section-right-section{
+        padding: 50px 0 50px 0 !important;
+    }
+
+    #choose-us-section-numbers-section{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #choose-us-section-numbers-section div{
+        width: 50px;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    .choose-us-section-number{
+        font-size: 5rem;
+    }
+    #choose-us-section-numbers-section p{
+        font-size: 1rem !important;
+        margin-top: -10px !important;
+    }
+    .choose-us-section-right-section-bottom-paragraph{
+        font-size: 0.7rem !important;
+    }
+    /* Testimonials section  */
+    #testimonials-section > .container{
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* ThankYou Section  */
+    #thank-you-section-heading{
+        font-size: 4rem;
+        line-height: 4.2rem;
+    }
+    #thank-you-section-sub-heading{
+        font-size: 18px !important;
+    }
+    #rent-online-button-sub-section{
+        margin-right: 5vw;
+    }
+    #thank-you-section-background .container{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #thank-you-section-content{
+        border: none;
+        padding-left: 0;
+        padding-top: 20px;
+    }
+}
+@media screen and (max-width:400px) {
+    /* Header Section */
+    #header-heading{
+        font-size: 3.5rem;
+        line-height: 45px;
+    }
+    #header-subheading-text{
+        font-size: 1rem;
+        line-height: 15px;
+        margin-top: 17px;
+    }
+    #logo-img{
+        width: 200px;
+    }
+    .navbar-toggler-icon{
+        height: 20px !important;
+        aspect-ratio: 1/1;
+    }
+    #header-subheader-arrow{
+        align-self: center;
+    }
+    #header-heading{
+        font-size: 3.5rem;
+    }
+    .header-section-sub-heading{
+        font-size: 2rem !important;
+    }
+    .header-section-sub-heading-subcontainer{
+        width: 40%;
+    }
+    .header-subheader-arrow-subcontainer{
+        width: 50px !important;
+        padding: 0 !important;
+        margin: 0 6% 0 auto !important;
+
+    }
+    #header-subheader-arrow{
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    /* Cars Section */
+    .header-subheader-arrow-subcontainer{
+        margin-right: 12% !important;
+    }
+    /* About Us Section  */
+    .services-section-container{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .services-section-header{
+        font-size: 2rem;
+    }
+    /* Why Choose Us Section  */
+    #choose-us-section-numbers-section div{
+        padding-left: 14vw;
+        padding-right: 14vw;
+    }
+    #choose-us-section-right-section{
+        padding: 50px 0 50px 0 !important;
+    }
+    #choose-us-section{
+        background-position-y: 15vh;
+    }
+    /* Testimonials section  */
+    #testimonials-section{
+        padding: 50px 0 50px 0;
+    }
+    #testimonials-section > .container{
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}

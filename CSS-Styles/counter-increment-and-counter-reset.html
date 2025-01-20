@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font: 25px/19px;
+            counter-reset: section 0;
+        }
+        h1{
+            background-color: antiquewhite;
+            counter-reset: subsection;
+        }
+        h2{
+            background-color: darkkhaki;
+        }
+        h1::before{
+            content: "Section " counter(section) ": " ;
+            counter-increment: section;
+        }
+        h2::before{
+            content: "Subsection " counter(section) "." counter(subsection) ": ";
+            counter-increment: subsection;
+        }
+    </style>
+    <title>counter increment and counter reset</title>
+</head>
+<body>
+    <h1>Front end</h1>
+    <h2>HTML tutorial</h2>
+    <h2>CSS tutorial</h2>
+    <h2>Boot strap tutorial</h2>
+    <h1>Back end</h1>
+    <h2>Java Script tutorial</h2>
+    <h2>Jquery tutorial</h2>
+    <h2>Json tutorial</h2>
+    <h1>Server side</h1>
+    <h2>SQL tutorial</h2>
+    <h2>PHP tutorial</h2>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia qui voluptatibus dolorum voluptas. Explicabo laborum maxime consectetur, et deleniti repudiandae.
+    </div>
+    <div class="box2">
+        <h2>Heading Two</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, cum.</p>
+    </div>
+    <ul id="list">
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+    </ul>
+</body>
+<script>
+    $(document).ready(function(){
+        $(".box").css("border","2px solid red");
+        $("h2,p").css("background-color","red");
+        $("h2,p").css("color","white");
+        $("li:gt(1)").css("border","2px solid green");
+        $("li:lt(1)").css("border","2px solid yellow");
+        $("li:eq(1)").css("border","2px solid orange");
+        $("#list").css("list-style","none");
+    });
+</script>
+</html>

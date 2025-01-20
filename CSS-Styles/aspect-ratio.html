@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* #box{
+            background-color: aqua;
+            width: 150px;
+            border: 1px solid black;
+            aspect-ratio: 1/2;
+            padding: 10px;
+            box-sizing: border-box;
+            float: left;
+        }
+        img{
+            width: 100%;
+
+        } */
+        /* #parent{
+            width: 800px;
+            margin: 0 auto;
+        } */
+        .box{
+            background-color: gold;
+            border: 1px solid black;
+            box-sizing: border-box;
+            min-height: 300px;
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+            float: left;
+            aspect-ratio: 1/1;
+
+        }
+        .box > img{
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+        }
+
+        @media screen and (max-width:900px) {
+            
+        }
+        @media screen and (max-width:600px) {
+            #parent{
+                width: 480px;
+            }
+        }
+    </style>
+    <title>Aspect Ratio</title>
+</head>
+<body>
+    <!-- <h1>Aspect Ratio</h1>
+    <div id="box"><img src="Images/flower.png" alt="Flower"></div>
+    <br> -->
+    <!-- <div id="parent"> -->
+        <div id="box2" class="box"><img src="Images/Blue rose.jpg" alt="Blue ROse">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, ut?</div>
+    <div id="box3" class="box"><img src="Images/images.jpg" alt="images">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, in!</div>
+    <div id="box4" class="box"><img src="Images/Red rose buoquet.jpg" alt="Red Rose buoquet">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, cupiditate?</div>
+    <!-- </div> -->
+</body>
+</html>

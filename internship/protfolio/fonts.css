@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'heading-font';
+    src: url('Poppins/Poppins-ExtraBold.ttf');
+}
+@font-face {
+    font-family: 'sub-heading-font';
+    src: url('Poppins/Poppins-Light.ttf');
+}
+@font-face {
+    font-family: "sub-heading-bold-font";
+    src: url("Poppins/Poppins-Bold.ttf");
+}
+@font-face {
+    font-family: "sub-heading-semi-bold";
+    src: url("Poppins/Poppins-Medium.ttf");
+}

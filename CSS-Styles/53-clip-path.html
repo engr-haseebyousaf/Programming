@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #img1{
+            clip-path: circle(50% at 50% 50%);
+        }
+        #img2{
+            clip-path: ellipse(30% 70% at 65% 50%);
+        }
+        #img3{
+            clip-path: inset(20% 30%  50% 50%);
+        }
+        #img4{
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        }
+        #box{
+            background-color: blue;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            height: 500px;
+            width: 500px;
+        }
+    </style>
+    <title>clip-path</title>
+</head>
+<body>
+    <h1>clip-path</h1>
+    <h2>Clip-path styles available at website bennettfeely.com</h2>
+    <img id="img1" src="Images/flower.png" alt="" srcset="">
+    <img id="img2" src="Images/Blue rose.jpg" alt="">
+    <img id="img3" src="Images/images.jpg" alt="">
+    <img id="img4" src="Images/Red rose buoquet.jpg" alt="">
+    <div id="box"></div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <style>
+        .image-upload-container {
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.image-preview-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.image-preview-box img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+    </style>
+</head>
+<body>
+    <div class="image-upload-container">
+        <input type="file" id="imageUpload" name="images[]" accept=".jpg" multiple>
+        <div id="imagePreview" class="image-preview-box">
+            <!-- Preview images will appear here -->
+        </div>
+    </div>
+    
+</body>
+<script src="jquery.js"></script>
+<script>
+    document.getElementById('imageUpload').addEventListener('change', function() {
+    var imagePreview = document.getElementById('imagePreview');
+    imagePreview.innerHTML = ''; // Clear any existing images
+    var files = this.files;
+
+    if (files.length > 4) {
+        alert('You can only upload a maximum of 4 images.');
+        return;
+    }
+
+    for (var i = 0; i < files.length; i++) {
+        var file = files[i];
+
+        if (!file.type.startsWith('image/')) {
+            continue;
+        }
+
+        var img = document.createElement("img");
+        img.classList.add("img-preview");
+        img.file = file;
+
+        imagePreview.appendChild(img); // Add image element to the preview box
+
+        var reader = new FileReader();
+        reader.onload = (function(aImg) { return function(e) { aImg.src = e.target.result; }; })(img);
+        reader.readAsDataURL(file);
+    }
+});
+
+</script>
+</html>

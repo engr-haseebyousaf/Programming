@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>width and height</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 30px;
+        }
+        .data{
+            width: fit-content;
+            border: 1px solid black;
+            padding: 10px;
+            margin: 30px;
+            background-color: pink;
+        }
+        .data2{
+            width: fit-content;
+            border: 1px solid black;
+            padding: 10px;
+            margin: 30px;
+            background-color: skyblue;
+        }
+    </style>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis pariatur debitis, delectus, blanditiis nihil unde reiciendis reprehenderit iure incidunt dicta porro sapiente eius fuga ducimus. Praesentium tempore minima dignissimos optio.</div>
+    <button id="height">height</button>
+    <button id="width">width</button>
+    <div class="data"></div>
+    <div class="data2"></div>
+</body>
+<script>
+    $(document).ready(function(){
+        $("#height").click(function(){
+
+            $(".data").text("");
+            $(".data").html("Height : " + $(".box").height() + "<br>" + "Inner Height : " + $(".box").innerHeight() + "<br>" + "Outer Height : " + $(".box").outerHeight() + "<br>" + "Outer Height with margin : " + $(".box").outerHeight(true));
+        });
+        $("#width").click(function(){
+
+            $(".data2").text("");
+            $(".data2").html("Width : " + $(".box").width() + "<br>" + "Inner Width : " + $(".box").innerWidth() + "<br>" + "Outer Width : " + $(".box").outerWidth() + "<br>" + "Outer Width with margin : " + $(".box").outerWidth(true));
+        });
+    });
+</script>
+</html>

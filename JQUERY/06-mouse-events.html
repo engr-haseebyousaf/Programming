@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, dolore officia fugit similique possimus quo iure fuga ratione labore debitis, molestiae hic quibusdam iste. Autem vero dignissimos, facere sequi voluptates harum ea? Eos beatae suscipit deleniti optio inventore laudantium ea!
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+        $(".box").click(function(){
+            $(".box").css("background-color","green");
+        });
+        $(".box").dblclick(function(){
+            $(".box").css("background-color","yellow");
+        });
+        $(".box").contextmenu(function(){
+            $(".box").css("background-color","red");
+        });
+        $(".box").mouseenter(function(){
+            $(".box").css("background-color","tan");
+        });
+        $(".box").mouseleave(function(){
+            $(".box").css("background-color","blue");
+        });
+    });
+</script>
+</html>

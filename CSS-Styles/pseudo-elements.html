@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div::first-letter{
+            font-weight: bold;
+            color: red;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: xx-large;
+            background-color: bisque;
+        }
+        div::first-line{
+            background-color: aqua;
+        }
+        ::selection{
+            background-color: red;
+            color: aliceblue;
+        }
+        #firstName::placeholder{
+            color: red;
+        }
+        p::before{
+            content: "Haseeb ";
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: italic;
+        }
+        p::after{
+            content: " Yousaf";
+            background-color: blue;
+            color: whitesmoke;
+            font-weight: bold;
+        }
+        ol li::marker{
+            color: red;
+        }
+        input[type="file"]:file-selector-button{
+            background-color: hotpink;
+        }
+        input[type="file"]::-webkit-file-upload-button{
+            background-color: blueviolet;
+            padding: 5px;
+        }
+        input[type="file"]::-webkit-file-upload-button:hover{
+            background-color: rgb(43, 202, 226);
+            padding: 5px;
+        }
+    </style>
+    <title>Pseudo-elements</title>
+</head>
+<body>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nesciunt alias sunt amet, expedita quia minus quaerat! Rerum, repellat vitae modi aperiam placeat perspiciatis a sequi reiciendis cumque tempore doloribus inventore sit ullam dolore nesciunt odio atque at? Minus, veritatis! Nam sunt reprehenderit expedita recusandae cum quos natus, tenetur earum accusantium. Autem molestiae maxime id nisi magnam ex saepe a soluta, quae tempore adipisci, corporis officiis nesciunt nulla exercitationem. Laboriosam ipsam doloribus quidem nemo commodi dolores maiores, minus, ratione blanditiis illum beatae sed unde cum possimus perferendis. Fugit ex deleniti sit temporibus illo, quia numquam dignissimos fuga tempore minima. Saepe!</div>
+    <ul>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, commodi fugiat aliquam dolor labore sapiente quidem et recusandae tempore? Aut.</li>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex ullam in illum dolores repellat. Dicta magni in similique eaque deleniti!</li>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis deleniti error obcaecati veritatis asperiores dignissimos soluta numquam optio molestiae excepturi.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquam suscipit fugit eius excepturi, officia ratione corporis praesentium autem et?</li>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel dolorum quae similique cum aperiam iure natus quibusdam aut, tempora aspernatur.</li>
+    </ul>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet aliquid ipsam! Accusamus deleniti a tempore! Voluptatum magni repellat sit libero, vel eum mollitia. Atque fugiat beatae, doloremque dolores nesciunt maxime accusantium odit eius dicta deserunt debitis veniam rem dolorum itaque voluptate commodi soluta eaque blanditiis, ullam error, perspiciatis nam magnam? Ea architecto cupiditate non voluptate doloremque fuga quas doloribus expedita iure nemo impedit blanditiis ipsa eligendi praesentium accusamus dolores obcaecati, vero facere sit. At quisquam consectetur velit iure, harum quas maiores aliquid corrupti accusamus culpa repudiandae totam perferendis veniam deleniti suscipit! Autem velit perferendis facilis exercitationem repellendus quis, consequuntur possimus repellat deserunt cupiditate, itaque officia voluptate. Quia aliquam aut amet officiis laboriosam, deserunt inventore earum ut aperiam! Dolore id ducimus voluptatem nostrum praesentium porro natus eum eos autem dolorum ab dolores expedita et velit ipsa nihil quae eaque, iusto incidunt officiis explicabo alias molestiae facere! Nihil, unde. Nihil, ipsa.</div><br><br>
+    <form action="">
+        <label for="firstName">First Name</label> <input type="text" name="" id="firstName" placeholder="Haseeb">
+        <label for="secondName">Second Name</label> <input type="text" name="" id="secondName">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <br><br>
+        <label for="file">Enter a file</label> <input type="file" name="file" id="file">
+        <br><br>
+    </form>
+    <ul>
+        <li>Banana</li>
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Date</li>
+    </ul>
+    <ol>
+        <li>Banana</li>
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Date</li>
+    </ol>
+</body>
+</html>
