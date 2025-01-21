@@ -1,0 +1,38 @@
+[
+    {
+        "id": "1",
+        "fname": "Haseeb",
+        "lname": "Yousaf",
+        "age": "23"
+    },
+    {
+        "id": "2",
+        "fname": "Sami",
+        "lname": "Yousaf",
+        "age": "22"
+    },
+    {
+        "id": "3",
+        "fname": "Salman",
+        "lname": "Khan",
+        "age": "57"
+    },
+    {
+        "id": "4",
+        "fname": "Shahrukh",
+        "lname": "Khan",
+        "age": "70"
+    },
+    {
+        "id": "5",
+        "fname": "Anil",
+        "lname": "Kapoor",
+        "age": "46"
+    },
+    {
+        "id": "6",
+        "fname": "Priayanka",
+        "lname": "Chopara",
+        "age": "39"
+    }
+]

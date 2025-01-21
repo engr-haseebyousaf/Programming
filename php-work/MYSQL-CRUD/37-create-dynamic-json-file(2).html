@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <script src="jquery/jquery.js"></script>
+    <title>Create Dynamic JSON file</title>
+</head>
+<body>
+    <div id="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <h1 class="py-2 bg-primary text-white text-center">Create Dynamic JSON file using data from form</h1>
+                </div>
+                <div class="col-md-8 mx-auto">
+                    <form action="37-create-dynamic-json-file(2).php" method="post">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label for="id">id</label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="number" name="id" id="id" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" name="name" id="name" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label for="dob">Date of Birth</label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="date" name="dob" id="dob" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <input type="submit" value="Submit" class="form-control btn btn-primary">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

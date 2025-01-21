@@ -1,0 +1,5 @@
+#load_more_btn:disabled{
+    background-color: rgb(191, 191, 191);
+    color: #0000ff;
+    cursor: not-allowed;
+}

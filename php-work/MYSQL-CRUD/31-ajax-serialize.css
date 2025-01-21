@@ -1,0 +1,24 @@
+#display{
+    position: fixed;
+    bottom: 40%;
+    left: 50px;
+    z-index: 100;
+}
+.success-message{
+    color: #00b300;
+    background-color: #80ff80;
+    border: 1px solid #00b300;
+    padding: 5px 10px;
+}
+.failure-message{
+    color: #D3246C;
+    background-color: #E49BB2;
+    border: 1px solid #D3246C;
+    padding: 5px 10px;
+}
+.loading-message{
+    color: yellowgreen;
+    background-color: yellow;
+    border: 1px solid yellowgreen;
+    padding: 5px 10px;
+}

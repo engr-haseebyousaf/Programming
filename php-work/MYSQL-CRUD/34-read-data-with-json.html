@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <script src="jquery/jquery.js"></script>
+    <title>Read Data With JSON</title>
+</head>
+<body>
+    <div id="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-2"><h1 class="py-2 bg-primary text-white text-center">Read Data With JSON</h1></div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 offset-2">
+                    <div id="load-data"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+        function loadTable(){
+            $.getJSON(
+                "json/my.json",
+                function(Data){
+                    $.each(Data, function(key, value){
+                        $("#load-data").append(value.id + " " + value.title + "<br>" + value.body + "<br>");
+                    });
+                }
+            );
+        }
+        loadTable();
+    });
+</script>
+</html>

@@ -1,0 +1,15 @@
+#content{
+    width: 100vw;
+    height: 90vh;
+}
+.btn-group .btn{
+    margin: 0 5px;
+}
+.active{
+    background-color: blue !important;
+}
+#pagination-container{
+    z-index: 100;
+    position: absolute;
+    bottom: 50px;
+}

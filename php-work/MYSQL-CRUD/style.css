@@ -1,0 +1,75 @@
+#success-message{
+    color: #00b300;
+    background-color: #80ff80;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 10;
+}
+#failure-message{
+    color: #D3246C;
+    background-color: #E49BB2;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 10;
+}
+.delete-btn{
+    color: #ffffff;
+    background-color: red;
+    border: 0px;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+.edit-btn{
+    color: #000000;
+    background-color: rgb(255, 217, 0);
+    border: 0px;
+    padding: 4px 20px;
+    cursor: pointer;
+}
+#modal{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    z-index: 100;
+    top: 0px;
+    right: 0px;
+    display: none;
+}
+#modal-form{
+    width: 40%;
+    min-height: 40vh;
+    background-color: #ffffff;
+    position: absolute;
+    top: 10vh;
+    left: calc(50% - 20%);
+    border: 1px solid black;
+}
+#modal-form h2{
+    margin: 5px 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+#modal-form .container{
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+#update_close_btn{
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: large;
+    font-weight: bold;
+    padding: 3px 10px;
+}
+#record_not_found_modal{
+    width: 100%;
+    text-align: center;
+    color: orange;
+}
