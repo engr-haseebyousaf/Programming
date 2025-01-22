@@ -7,10 +7,10 @@
     <div class="col-md-12 my-3">
         <a href="{{route('user.create')}}" class="btn btn-primary">Add New</a>
     </div>
-    @if(session("addStatus"))
+    @if(session("status"))
         <div class="col-md-12">
             <div class="alert alert-success">
-                {{session("addStatus")}}
+                {{session("status")}}
             </div>
         </div>
     @endif
@@ -35,7 +35,14 @@
                     <td>{{ $user->city }}</td>
                     <td><a href="{{route('user.show',$user->userId)}}" class="btn btn-primary btn-sm">View</a></td>
                     <td><a href="{{route('user.edit',$user->userId)}}" class="btn btn-success btn-sm">Update</a></td>
-                    <td><a href="#" class="btn btn-danger btn-sm">Delete</a></td>
+                    <td>
+                        <form action="{{route('user.destroy', $user->userId)}}" method="post">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                        </form>
+                        
+                    </td>
                 </tr>
             @endforeach
         </table>

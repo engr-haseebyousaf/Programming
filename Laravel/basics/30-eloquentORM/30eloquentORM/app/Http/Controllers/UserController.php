@@ -30,6 +30,12 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            "updateUserName" => "required|string",
+            "addUserEmail" => "required|email",
+            "addUserAge" => "required|numeric",
+            "addUserCity" => "required|alpha"
+        ]);
         // $user = new User;
         // $user->name = $request->addUserName;
         // $user->email = $request->addUserEmail;
@@ -46,7 +52,7 @@ class UserController extends Controller
 
         return redirect()
         ->route("user.index")
-        ->with("addStatus", "Successfully Inserted ".$request->addUserName." !");
+        ->with("status", "Successfully Inserted ".$request->addUserName." !");
     }
 
     /**
@@ -72,7 +78,32 @@ class UserController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+
+        $request->validate([
+            "updateUserName" => "required|string",
+            "updateUserEmail" => "required|email",
+            "updateUserAge" => "required|numeric",
+            "updateUserCity" => "required|alpha"
+        ]);
+
+        // $user = User::find($id);
+        // $user->name = $request->updateUserName;
+        // $user->email = $request->updateUserEmail;
+        // $user->age = $request->updateUserAge;
+        // $user->city = $request->updateUserCity;
+        // $user->save();
+
+        $user = User::find($id)
+                ->update([
+                    "name" => $request->updateUserName,
+                    "email" => $request->updateUserEmail,
+                    "age" => $request->updateUserAge,
+                    "city" => $request->updateUserCity
+                ]);
+
+        return redirect()
+        ->route("user.index")
+        ->with("status", "Successfully Updated ".$request->updateUserName."!");
     }
 
     /**
@@ -80,6 +111,10 @@ class UserController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $user = User::find($id);
+        $user->delete();
+        return redirect()
+        ->route("user.index")
+        ->with("status", "Successfully Deleted !");
     }
 }
