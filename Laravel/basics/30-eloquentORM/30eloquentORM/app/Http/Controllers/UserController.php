@@ -60,7 +60,7 @@ class UserController extends Controller
      */
     public function show(string $id)
     {
-        $userData = User::find($id);
+        $userData = User::findOrFail($id);
         return view("viewUser", compact("userData"));
     }
 
@@ -69,7 +69,7 @@ class UserController extends Controller
      */
     public function edit(string $id)
     {
-        $user = User::find($id);
+        $user = User::findOrFail($id);
         return view("updateUser", compact("user"));
     }
 
@@ -111,7 +111,7 @@ class UserController extends Controller
      */
     public function destroy(string $id)
     {
-        $user = User::find($id);
+        $user = User::findOrFail($id);
         $user->delete();
         return redirect()
         ->route("user.index")
