@@ -5,7 +5,6 @@
 <!-- Page Specific JS File -->
 <script src="assets/js2/index.js"></script>
 <!-- Coctact Files  -->
-<script src="http://maps.google.com/maps/api/js?key=AIzaSyB55Np3_WsZwUQ9NS7DP-HnneleZLYZDNw&amp;sensor=true"></script>
 <script src="assets/js2/gmaps.js"></script>
 <!-- Page Specific JS File -->
 <script src="assets/js2/contact.js"></script>
