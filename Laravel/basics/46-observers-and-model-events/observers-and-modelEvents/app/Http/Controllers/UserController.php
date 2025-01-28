@@ -12,7 +12,20 @@ class UserController extends Controller
      */
     public function index()
     {
-        //
+        // $user = User::with("posts")
+        //                 ->select("id", "name")
+        //                 ->where("name", "like", "%yousaf")
+        //                 ->withWhereHas("posts", function($query){
+        //                     $query->liked();
+        //                 })
+        //                 ->get();
+        // return $user;
+
+        $user = User::with("posts")
+                        ->select("id", "name")
+                        ->where("name", "like", "%yousaf")
+                        ->get();
+        return $user;
     }
 
     /**

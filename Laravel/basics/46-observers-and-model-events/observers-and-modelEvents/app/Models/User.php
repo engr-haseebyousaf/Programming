@@ -14,6 +14,8 @@ class User extends Model
         return $this->hasMany(Post::class);
     }
 
+    
+
     protected static function booted(){
         static::deleted(function($user){
             $user->posts()->delete();
