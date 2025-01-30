@@ -31,5 +31,12 @@
     {{-- Dismissable attribute to make alert dismissable with the help of cross button --}}
 
     <x-alerts.alert dismissable type="light" role="alert" id="newId" class="w-50 mt-5"/>
+    
+    <x-alerts.slot-alert type="success" message="This is the custom message coming from component">
+        <x-slot:title class="font-bold">
+            This is the heading coming from slot tag {{$component->link("New link", "https://google.com", "_blank")}}
+        </x-slot>
+        <p class="mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, tenetur? {{$component->link("This is the link")}}</p>
+    </x-alerts.slot-alert>
 </body>
 </html>
