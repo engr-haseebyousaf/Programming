@@ -35,6 +35,30 @@
                         />
                     </div>
                     <div class="mb-3">
+                        <label for="age" class="form-label">Age</label>
+                        <input
+                            type="text"
+                            name="age"
+                            id="age"
+                            class="form-control"
+                            placeholder="Age"
+                        />
+                    </div>
+                    <div class="mb-3">
+                        <label for="role" class="form-label">Role</label>
+                        <select
+                            class="form-select"
+                            name="role"
+                            id="role"
+                        >
+                            <option value="admin">Admin</option>
+                            <option value="editor">Editor</option>
+                            <option value="writer">Writer</option>
+                            <option value="subscriber">Subscriber</option>
+                        </select>
+                    </div>
+                    
+                    <div class="mb-3">
                         <label for="password" class="form-label">Password</label>
                         <input
                             type="password"

@@ -13,6 +13,8 @@ class UserController extends Controller
             "name" => "required|string",
             "email" => "required|email",
             "password" => "required|confirmed",
+            "age" => "required|numeric|gte:18",
+            "role" => "required"
         ]);
         $user = User::create($credentials);
         if ($user) {
@@ -26,19 +28,23 @@ class UserController extends Controller
             "password" => "required"
         ]);
         if (Auth::attempt($credentials)) {
-            if (Auth::user()) {
-                return view("dashboard");
-            } else {
-                return redirect()->route("login");
-            }
+            return redirect()->route("dashboard");
+        } else {
+            return back()->withErrors(["email"=>"Invalid Credentials"]);
         }
     }
 
     public function innerPage(){
-        if (Auth::user()) {
-            return view("innerPage");
-        } else {
-            return redirect()->route("login");
-        }
+        return view("innerPage");
+    }
+
+    public function dashboard(){
+        return view("dashboard");
+        
+    }
+
+    public function logout(){
+        Auth::logout();
+        return redirect()->route("login");
     }
 }

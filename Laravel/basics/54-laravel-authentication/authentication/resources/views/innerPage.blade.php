@@ -11,8 +11,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 mt-5">
-                <a href="#" class="btn btn-success">Dashboard</a>
-                <a href="#" class="btn btn-danger">Logout</a>
+                <a href="{{route('dashboard')}}" class="btn btn-success">Dashboard</a>
+                <a href="{{route('logout')}}" class="btn btn-danger">Logout</a>
             </div>
         </div>
     </div>

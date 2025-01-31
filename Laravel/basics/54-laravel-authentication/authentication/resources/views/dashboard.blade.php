@@ -13,7 +13,7 @@
             <div class="col-md-6 mt-5">
                 <h1>Salam {{Auth::user()->name}}</h1>
                 <a href="{{route('innerPage')}}" class="btn btn-primary">Inner Page</a>
-                <a href="#" class="btn btn-danger">Logout</a>
+                <a href="{{route('logout')}}" class="btn btn-danger">Logout</a>
             </div>
         </div>
     </div>
